@@ -39,9 +39,19 @@ library:
   source-dirs: src
 
 executables:
-  aoc20221201-exe:
+  20221201:
     main:                Main.hs
     source-dirs:         app/20221201
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - aoc2022
+
+  20221202:
+    main:                Main.hs
+    source-dirs:         app/20221202
     ghc-options:
     - -threaded
     - -rtsopts
