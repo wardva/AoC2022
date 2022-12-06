@@ -71,6 +71,16 @@ executables:
     dependencies:
     - aoc2022
 
+  20221206:
+    main:                Main.hs
+    source-dirs:         app/20221206
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - aoc2022
+
 tests:
   aoc2022-test:
     main:                Spec.hs
