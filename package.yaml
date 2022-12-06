@@ -23,6 +23,8 @@ dependencies:
 - base >= 4.7 && < 5
 - text
 - split
+- regex-applicative
+- vector
 
 ghc-options:
 - -Wall
@@ -52,6 +54,16 @@ executables:
   20221202:
     main:                Main.hs
     source-dirs:         app/20221202
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - aoc2022
+
+  20221205:
+    main:                Main.hs
+    source-dirs:         app/20221205
     ghc-options:
     - -threaded
     - -rtsopts
