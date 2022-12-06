@@ -43,7 +43,7 @@ library:
 executables:
   20221201:
     main:                Main.hs
-    source-dirs:         app/20221201
+    source-dirs:         src/20221201
     ghc-options:
     - -threaded
     - -rtsopts
@@ -53,7 +53,7 @@ executables:
 
   20221202:
     main:                Main.hs
-    source-dirs:         app/20221202
+    source-dirs:         src/20221202
     ghc-options:
     - -threaded
     - -rtsopts
@@ -63,7 +63,7 @@ executables:
 
   20221205:
     main:                Main.hs
-    source-dirs:         app/20221205
+    source-dirs:         src/20221205
     ghc-options:
     - -threaded
     - -rtsopts
@@ -73,7 +73,7 @@ executables:
 
   20221206:
     main:                Main.hs
-    source-dirs:         app/20221206
+    source-dirs:         src/20221206
     ghc-options:
     - -threaded
     - -rtsopts
