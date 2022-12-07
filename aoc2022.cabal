@@ -30,6 +30,7 @@ library
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
   build-depends:
       base >=4.7 && <5
+    , containers
     , regex-applicative
     , split
     , text
@@ -46,6 +47,7 @@ executable 20221201
   build-depends:
       aoc2022
     , base >=4.7 && <5
+    , containers
     , regex-applicative
     , split
     , text
@@ -62,6 +64,7 @@ executable 20221202
   build-depends:
       aoc2022
     , base >=4.7 && <5
+    , containers
     , regex-applicative
     , split
     , text
@@ -78,6 +81,7 @@ executable 20221205
   build-depends:
       aoc2022
     , base >=4.7 && <5
+    , containers
     , regex-applicative
     , split
     , text
@@ -94,6 +98,24 @@ executable 20221206
   build-depends:
       aoc2022
     , base >=4.7 && <5
+    , containers
+    , regex-applicative
+    , split
+    , text
+    , vector
+  default-language: Haskell2010
+
+executable 20221207
+  main-is: Main.hs
+  other-modules:
+      Paths_aoc2022
+  hs-source-dirs:
+      src/20221207
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      aoc2022
+    , base >=4.7 && <5
+    , containers
     , regex-applicative
     , split
     , text
@@ -111,6 +133,7 @@ test-suite aoc2022-test
   build-depends:
       aoc2022
     , base >=4.7 && <5
+    , containers
     , regex-applicative
     , split
     , text
